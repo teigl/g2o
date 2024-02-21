@@ -55,7 +55,7 @@ class G2O_CORE_API HyperGraph {
   /**
    * \brief enum of all the types we have in our graphs
    */
-  enum G2O_CORE_API HyperGraphElementType {
+  enum HyperGraphElementType {
     HGET_VERTEX,
     HGET_EDGE,
     HGET_PARAMETER,

@@ -85,8 +85,8 @@ class StandardCamera : public qglviewer::Camera {
 
 }  // end anonymous namespace
 
-G2oQGLViewer::G2oQGLViewer(QWidget* parent, const QGLWidget* shareWidget)
-    : QGLViewer(parent, shareWidget),
+G2oQGLViewer::G2oQGLViewer(QWidget* parent, Qt::WindowFlags flags)
+    : QGLViewer(parent, flags),
       graph(0),
       _drawActions(0),
       _drawList(0),

@@ -21,7 +21,7 @@
 
 #include "g2o/core/hyper_graph_action.h"
 #include "g2o_viewer_api.h"
-#include "qglviewer.h"
+#include "QGLViewer/qglviewer.h"
 
 namespace g2o {
 
@@ -32,7 +32,7 @@ class SparseOptimizer;
  */
 class G2O_VIEWER_API G2oQGLViewer : public QGLViewer {
  public:
-  G2oQGLViewer(QWidget* parent = NULL, const QGLWidget* shareWidget = 0);
+  G2oQGLViewer(QWidget* parent = NULL, Qt::WindowFlags flags = Qt::WindowFlags());
   G2oQGLViewer(const G2oQGLViewer&) = delete;
   G2oQGLViewer& operator=(const G2oQGLViewer&) = delete;
 

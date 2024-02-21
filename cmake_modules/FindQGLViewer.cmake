@@ -1,11 +1,17 @@
-find_package(Qt5 COMPONENTS Core Xml OpenGL Gui Widgets QUIET)
-if(NOT Qt5_FOUND)
-  message("Qt5 not found. Install it and set Qt5_DIR accordingly")
+find_package(Qt6 COMPONENTS Core Xml OpenGL Gui Widgets OpenGLWidgets QUIET)
+if(NOT Qt6_FOUND)
+  message("Qt6 not found. Install it and set Qt6_DIR accordingly")
   if (WIN32)
-    message("  In Windows, Qt5_DIR should be something like C:/Qt/5.4/msvc2013_64_opengl/lib/cmake/Qt5")
+    message("  In Windows, Qt6_DIR should be something like C:/Qt/5.4/msvc2013_64_opengl/lib/cmake/Qt5")
   endif()
   return()
 endif()
+
+set(QGLVIEWER_FOUND ON)
+set(QGLVIEWER_INCLUDE_DIR "C:/Program Files (x86)/libQGLViewer/include")
+set(QGLVIEWER_LIBRARY "C:/Program Files (x86)/libQGLViewer/lib/QGLViewer.lib")
+
+return()
 
 find_path(QGLVIEWER_INCLUDE_DIR qglviewer.h
     /usr/include/QGLViewer

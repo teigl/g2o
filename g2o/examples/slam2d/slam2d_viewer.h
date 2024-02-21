@@ -20,7 +20,7 @@
 #define SLAM2D_VIEWER_H
 
 #include "g2o/core/sparse_block_matrix.h"
-#include "qglviewer.h"
+#include "QGLViewer/qglviewer.h"
 
 namespace g2o {
 

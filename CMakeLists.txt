@@ -3,6 +3,16 @@ set(CMAKE_LEGACY_CYGWIN_WIN32 0)
 
 project(g2o)
 
+set(ENV{AMD_DIR} "C:\\Program Files (x86)\\SuiteSparse\\lib\\cmake\\AMD")
+set(ENV{CAMD_DIR} "C:\\Program Files (x86)\\SuiteSparse\\lib\\cmake\\CAMD")
+set(ENV{COLAMD_DIR} "C:\\Program Files (x86)\\SuiteSparse\\lib\\cmake\\COLAMD")
+set(ENV{CCOLAMD_DIR} "C:\\Program Files (x86)\\SuiteSparse\\lib\\cmake\\CCOLAMD")
+set(ENV{CHOLMOD_DIR} "C:\\Program Files (x86)\\SuiteSparse\\lib\\cmake\\CHOLMOD")
+set(ENV{SPQR_DIR} "C:\\Program Files (x86)\\SuiteSparse\\lib\\cmake\\SPQR")
+set(ENV{SuiteSparse_config_DIR} "C:\\Program Files (x86)\\SuiteSparse\\lib\\cmake\\SuiteSparse_config")
+set(ENV{Qt6_DIR} "C:\\qt\\6.2.1\\msvc2019_64\\lib\\cmake\\Qt6")
+set(ENV{PATH} "$ENV{PATH};C:\\qt\\6.2.1\\msvc2019_64\\bin")
+
 include(CPack)
 include(GNUInstallDirs)
 
